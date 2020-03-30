@@ -1,0 +1,162 @@
+html, body {
+  margin: initial;
+  text-align: center;
+  font-family: "lato", sans-serif;
+}
+
+.main-content-wrapper {
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+  margin-left: 15%;
+}
+
+.header-section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+  color: #ffffff;
+  text-shadow: 0 0 5px #566E8B;
+}
+
+.text-section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100%;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+  color: #ffffff;
+  text-shadow: 0 0 5px #566E8B;
+}
+
+.image-break {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 50vh;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.nav-bar {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #566E8B;
+  width: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-bar {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  .main-content-wrapper {
+    margin-left: initial;
+  }
+}
+.heading {
+  font-size: 2em;
+  align-self: center;
+  justify-content: flex-start;
+  margin-top: 40vh;
+}
+
+.summary {
+  padding-top: 10px;
+  font-size: 1.2em;
+  align-self: center;
+  justify-content: center;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Move the pseudo-element back away from the camera,
+      * then scale it back up to fill the viewport.
+      * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
+
+/* The styling for the static div. */
+.static {
+  background: #2D353F;
+}
+
+.image-credits {
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1::after {
+  background-image: url("../img/neon-skyscraper.jpg");
+}
+
+.bg2::after {
+  background-image: url("../img/coding.jpg");
+}
+
+.bg3::after {
+  background-image: url("../img/piano.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.inner-content span {
+  font-size: 1.5em;
+  margin: 50px;
+  display: block;
+}
+
+.inner-content h2 {
+  padding: 0.5em;
+}
+
+.inner-content li {
+  padding: 2px;
+}
+
+.inner-content img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  vertical-align: middle;
+  margin: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

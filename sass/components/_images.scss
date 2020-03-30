@@ -1,0 +1,20 @@
+.image-credits {
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1::after {
+    background-image: url('../img/neon-skyscraper.jpg');
+}
+
+.bg2::after {
+    background-image: url('../img/coding.jpg');
+}
+
+.bg3::after {
+    background-image: url('../img/piano.jpg');
+    background-repeat: no-repeat;
+    height: 100%;
+}

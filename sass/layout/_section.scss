@@ -1,0 +1,45 @@
+.header-section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100vh;
+
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    color: $colour-text-white;
+    text-shadow: 0 0 5px $colour-accent-dark;
+}
+
+.text-section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100%;
+
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    color: $colour-text-white;
+    text-shadow: 0 0 5px $colour-accent-dark;
+}
+
+.image-break {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 50vh;
+
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+}
