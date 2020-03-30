@@ -9,33 +9,49 @@
     <body>
         <main id="container">
             <section id="nav-bar" class="nav-bar">
-                <h1>Hi.</h1>
+                <h1><a href="#header">Hi.</a></h1>
+                <nav class="nav-options">
+                    <div><a href="#summary">Summary</a></div>
+                    <div><a href="#skills">Skills</a></div>
+                    <div><a href="#work">Work</a></div>
+                    <div><a href="#background">Background</a></div>
+                    <div><a href="#interests">Interests</a></div>
+                </nav>
+                <div id="contact" class="contact">
+                    <a href="https://www.linkedin.com/in/john-andrew-cole/" target="_blank" rel="noopener noreferrer">
+                        <img src="img/linkedin-icon.png" class="link-icons">
+                    </a>
+                    <a href="https://github.com/Oligon?tab=repositories" target="_blank" rel="noopener noreferrer">
+                        <img src="img/github-icon-light.png" alt="GitHub Icon" />
+                    </a>
+                </div>
             </section>
 
             <section id="main-content-wrapper" class="main-content-wrapper">
-                <section id="header" class="header-section parallax bg1">
+                <section id="header" class="header-section header-image">
                     <div class="heading">
-                        Hi. My name is John Cole.
+                        My name is John Cole.
                     </div>
                     <div class="summary">
                         I am a mobile software engineer.
                     </div>
+                    <!-- Image Credits -->
                     <div class="image-credits">
-                        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@vimarovi?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Victor Rodriguez">
+                        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px">
                             <span style="display:inline-block;padding:2px 3px">
                                 <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
                                     <title>unsplash-logo</title>
                                     <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
                                 </svg>
                             </span>
-                            <span style="display:inline-block;padding:2px 3px">Victor Rodriguez</span>
+                            <span style="display:inline-block;padding:2px 3px">John Cole</span>
                         </a>
                     </div>
                 </section>
 
-                <section id="about" class="text-section static inner-content">
+                <section id="summary" class="text-section static inner-content">
                     <div>
-                        <h2>Time is precious. Here's what you need to know about me:</h2>
+                        <h2>Here's what you need to know about me:</h2>
                     </div>
                     <div>
                         <span>I am a full-stack, cross-platform mobile developer.</span>
@@ -64,7 +80,7 @@
 
                 <section id="skills" class="text-section static inner-content">
                     <h2>My skillset. Your disposal.</h2>
-                    <span>I am experienced with, and skilled in the use of:</span>
+                    <span>I am skilled in the use of:</span>
                     <ul>
                         <li>C#</li>
                         <li>The .NET platform</li>
@@ -73,18 +89,18 @@
                         <li>iOS development</li>
                         <li>ASP.NET Web APIs</li>
                         <li>HTML</li>
-                        <li>CSS (SASS & SCSS)</li>
-                        <li>JavaScript (especially React and Gatsby, which I built this website with!)</li>
+                        <li>CSS (SASS)</li>
+                        <li>JavaScript (React and Gatsby)</li>
                         <li>SQL (MySQL and MS SQL)</li>
                         <li>PHP</li>
                     </ul>
                     <span>My personal strengths include:</span>
                     <ul>
                         <li>Very quick learner</li>
-                        <li>Always hungry to learn and adapt to new technologies</li>
+                        <li>Able to adapt to new technologies fluidly</li>
                         <li>Need little supervision or assistance when pursuing an objective; point me in a direction and I will get it done</li>
-                        <li>Sociable and friendly</li>
-                        <li>Comfortable with being thrown in the deep-end</li>
+                        <li>Personable and friendly</li>
+                        <li>High personal standards when delivering work</li>
                     </ul>
                 </section>
                 
@@ -104,47 +120,99 @@
                 </section>
                 
                 <section id="work" class="text-section static inner-content">
-                    <div>
-                        <h2>Always working, always learning.</h2>
-                        <p>
-                            I am currently building a musical education app using Kotlin that will be released onto the Play Store.
-                            <br/>
-                            <br/>
-                            Check back soon for updates on this project!
-                        </p>
-                    </div>
-                    <div>
-                        <h2>Freelance app development.</h2>
-                        <p>
-                            I was brought on to a small development team of three members to assist in the building and maintenance of a production-scale application.
-                            <br/>
-                            <br/>
-                            References are available upon request.
-                        </p>
-                    </div>
-                    <div>
-                        <h2>Start-up.</h2>
-                        <p>I created a business that aimed to provide a music streaming solution for retail companies.<br/></p>
-                        <p> I built an API and had an interested client before I had to shut down the business due to financial and licencing issues.</p>
-                    </div>
-                    <div>
-                        <h2>Equipment rental.</h2>
-                        <p>I created a website that allowed users to select, check the availability of, and rent out pieces of musical equipment. It served clients across the northern part of South Africa.<br/></p>
+                    <div class="cards">
+                        <div class="card">
+                            <img src="./img/angulate-media.png" alt="Avatar">
+                            <div class="card-container">
+                                <h4><b>Angulate Media</b></h4>
+                                <p>Freelance Mobile App Developer</p>
+                                <p>Helped to build a corporate-scale defect tracking application. Performed duties that ranged from visual upgrades to entirely new features.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/oligon.png" alt="Avatar">
+                            <div class="card-container">
+                                <h4><b>Oligon</b></h4>
+                                <p>Music Producer</p>
+                                <p>Helped to build a corporate-scale defect tracking application. Performed duties that ranged from visual upgrades to entirely new features.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
-                <section id="contact" class="text-section static inner-content">
-                    <div>
-                        <h2>My LinkedIn with more details about my past roles.</h2>
-                        <a href="https://www.linkedin.com/in/john-andrew-cole/" target="_blank" rel="noopener noreferrer">
-                            <img src="img/linked-in-icon.png" class="link-icons">
+                <section id="blur-background-photo" class="image-break parallax bg4">
+                    <!-- Image Credits -->
+                    <div class="image-credits">
+                        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@karljkhedin?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Karl JK Hedin">
+                            <span style="display:inline-block;padding:2px 3px">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
+                                    <title>unsplash-logo</title>
+                                    <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+                                </svg>
+                            </span>
+                            <span style="display:inline-block;padding:2px 3px">Karl JK Hedin</span>
                         </a>
                     </div>
+                </section>
+
+                <section id="background" class="text-section static inner-content">
                     <div>
-                        <h2>My GitHub, for fun scribbles and projects.</h2>
-                        <a href="https://github.com/Oligon?tab=repositories" target="_blank" rel="noopener noreferrer">
-                            <img src="img/github-icon-light.png" alt="GitHub Icon" />
+                        <h2>Always working, always learning.</h2>
+                        <p>
+                            I come from a strong creative and entrepreneurial background. Before I touched mobile development, I was a start-up creator. 
+                            Before that, I was (and still am) a musician and pianist.
+                            <br/>
+                            I studied a PPE (philosophy, politics and economics) degree the University of the Witwatersrand for four years before realising that I wasn't in the right field.
+                            I left university to pursue my dream of making music and building with technology. However, I had no marketable skills and I had no source of income.
+                            <br>
+                            I scraped through on the drip-fed income I was receiving for doing freelance DJ work across the northern parts of South Africa.
+                            <br>
+                            As I carried on DJing, I began to accrue a large amount of audio and visual equipment. 
+                            I started to develop a simple website using HTML, CSS, PHP and JS, and built a database using MySQL, that would allow me to rent out equipment to clients.
+                            It was a fully-fledged booking system, and I became hooked to development. I found the blend of technology and creativity to be intoxicating.
+                            <br/>
+                            Wanting to expand my horizons, I picked up my first true programming language: C#. After I felt comfortable with the .NET platform at large, I began to develop my first mobile application.
+                            <br>
+                            It was a simple 
+                        </p>
+                    </div>
+                </section>
+
+                <section id="skyscraper-photo" class="image-break parallax bg5">
+                    <!-- Image Credits -->
+                    <div class="image-credits">
+                        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@vimarovi?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Victor Rodriguez">
+                            <span style="display:inline-block;padding:2px 3px">
+                                <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
+                                    <title>unsplash-logo</title>
+                                    <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+                                </svg>
+                            </span>
+                            <span style="display:inline-block;padding:2px 3px">Victor Rodriguez</span>
                         </a>
+                    </div>
+                </section>
+
+                <section id="interests" class="text-section static inner-content">
+                    <div>
+                        <h2>These are the things that I currently find the most exciting.</h2>
+                        <span>Technologies</span>
+                        <ul>
+                            <li>The Android and iOS environments respectively</li>
+                            <li>.NET Core</li>
+                            <li>Kotlin</li>
+                            <li>API development</li>
+                            <li>MVVMCross</li>
+                        </ul>
+                        <span>Other interests and hobbies</span>
+                        <ul>
+                            <li>Piano (I am a grade 6 pianist, and entirely self-taught)</li>
+                            <li>Electronic music production</li>
+                            <li>Football</li>
+                            <li>History (especially classical history)</li>
+                            <li>Linguistics and etymology</li>
+                            <li>Photography (some of these photos are my own!)</li>
+                        </ul>
                     </div>
                 </section>
             </section>

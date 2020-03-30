@@ -1,0 +1,29 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    align-content: space-between;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 500px;
+    border-radius: 5px;
+    background-color: $colour-accent;
+    color: $colour-text-black !important;
+    text-shadow: none !important;
+}
+
+.card:hover {
+    box-shadow: 0 8px 10px 0 $colour-accent-light;
+    scale: 0.9;
+}
+  
+img.card {
+    border-radius: 5px 5px 0 0;
+}
+  
+.card-container {
+    padding: 2px 16px;
+}

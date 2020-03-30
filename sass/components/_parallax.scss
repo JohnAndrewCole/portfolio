@@ -21,3 +21,19 @@
 .static {
     background: $colour-star-background;
 }
+
+.bg2::after {
+    background-image: url('../img/coding.jpg');
+}
+
+.bg3::after {
+    background-image: url('../img/piano.jpg');
+}
+
+.bg4::after {
+    background-image: url('../img/header.jpg');
+}
+
+.bg5::after {
+    background-image: url('../img/neon-skyscraper.jpg');
+}
