@@ -1,29 +1,40 @@
-.card {
+.cards {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    height: 400px;
-    align-content: space-between;
+    align-content: center;
+    justify-content: center;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 500px;
-    border-radius: 5px;
     background-color: $colour-accent;
-    color: $colour-text-black !important;
-    text-shadow: none !important;
+    border-radius: 10px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px;
 }
 
-.card:hover {
-    box-shadow: 0 8px 10px 0 $colour-accent-light;
-    scale: 0.9;
+.card img {
+    padding: 5px;
+    width: 80%;
 }
-  
-img.card {
-    border-radius: 5px 5px 0 0;
+
+.work-section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100%;
+
+    color: $colour-text-white;
+    text-shadow: 0 0 5px $colour-accent-dark;
 }
-  
-.card-container {
-    padding: 2px 16px;
+
+.cards :hover {
+    scale: 1.2;
+}
+
+.card img, p, h3 {
+    pointer-events: none;
 }

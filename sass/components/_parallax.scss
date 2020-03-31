@@ -19,21 +19,13 @@
   
 /* The styling for the static div. */
 .static {
-    background: $colour-star-background;
+    background: radial-gradient(ellipse at top, $colour-star-background-light 0%, $colour-star-background 100%);
 }
 
 .bg2::after {
     background-image: url('../img/coding.jpg');
 }
 
-.bg3::after {
-    background-image: url('../img/piano.jpg');
-}
-
 .bg4::after {
     background-image: url('../img/header.jpg');
-}
-
-.bg5::after {
-    background-image: url('../img/neon-skyscraper.jpg');
 }
