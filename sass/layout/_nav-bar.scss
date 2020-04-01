@@ -66,3 +66,41 @@
 .contact img:hover {
     scale: 1.2;
 }
+
+.contact p {
+    font-size: 0.8em;
+    color: $colour-accent-light;
+}
+
+.collapsed-nav-height {
+    height: fit-content;
+}
+
+.collapsed-nav-options {
+    color: $colour-accent-dark;
+    background-color: $colour-accent-dark;
+    transition: transform 0.5s ease-in-out;
+    position: fixed;
+    top: 0;
+    transform: translateX(100%);
+    width: 100%;
+    z-index: 1;
+}
+
+.collapsed-nav-options a {
+    float: left;
+    display: block;
+    color: $colour-accent-light;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    margin: auto;
+}
+
+.collapsed-nav-options a:hover {
+    scale: 1.1;
+}
+
+.shown-nav-options {
+    transform: translateX(0%);
+}

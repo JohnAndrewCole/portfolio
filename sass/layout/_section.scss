@@ -19,6 +19,7 @@
     position: relative;
     /* The height of the container. Must be set, but it doesn't really matter what the value is. */
     height: 100vh;
+    z-index: 1;
 
     /* For text formatting. */
     display: flex;
@@ -42,4 +43,14 @@
     justify-content: center;
     flex-direction: column;
     align-content: space-between;
+}
+
+.work-section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100%;
+
+    color: $colour-text-white;
+    text-shadow: 0 0 5px $colour-accent-dark;
 }

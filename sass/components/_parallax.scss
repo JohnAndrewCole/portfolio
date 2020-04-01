@@ -1,31 +1,24 @@
-.parallax::after {
-    /* Display and position the pseudo-element */
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    /* Move the pseudo-element back away from the camera,
-        * then scale it back up to fill the viewport.
-        * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-    transform: translateZ(-1px) scale(1.5);
-    /* Force the background image to fill the whole element. */
-    background-size: 100%;
-    /* Keep the image from overlapping sibling elements. */
+.parallax {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -1;
 }
-  
-/* The styling for the static div. */
-.static {
-    background: radial-gradient(ellipse at top, $colour-star-background-light 0%, $colour-star-background 100%);
+
+.header {
+    background-image: url("../img/city-road.jpg");
 }
 
-.bg2::after {
-    background-image: url('../img/coding.jpg');
+.coding {
+    background-image: url("../img/coding.jpg");
 }
 
-.bg4::after {
-    background-image: url('../img/header.jpg');
+.piano {
+    background-image: url("../img/piano.jpg");
+}
+
+.skyscraper {
+    background-image: url("../img/neon-skyscraper.jpg");
 }

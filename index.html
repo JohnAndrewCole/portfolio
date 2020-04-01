@@ -17,17 +17,35 @@
                     <div><a href="#interests">Interests</a></div>
                 </nav>
                 <div id="contact" class="contact">
+                    <p>Built simply and effectively with HTML and CSS.</p>
+                    <p>Copyright John Cole 2020.</p>
                     <a href="https://www.linkedin.com/in/john-andrew-cole/" target="_blank" rel="noopener noreferrer">
                         <img src="img/linkedin-icon.png" class="link-icons">
                     </a>
-                    <a href="https://github.com/Oligon?tab=repositories" target="_blank" rel="noopener noreferrer">
+                    <!-- <a href="https://github.com/Oligon?tab=repositories" target="_blank" rel="noopener noreferrer">
                         <img src="img/github-icon-light.png" alt="GitHub Icon" />
-                    </a>
+                    </a> -->
+                </div>
+            </section>
+
+            <section id="collapsed-nav-bar" class="collapsed-nav-height" hidden>
+                <button class="hamburger hamburger--collapse" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <div id="collapsed-nav-options" class="collapsed-nav-options">
+                    <nav>
+                        <div><a href="#summary">Summary</a></div>
+                        <div><a href="#skills">Skills</a></div>
+                        <div><a href="#work">Work</a></div>
+                        <div><a href="#interests">Interests</a></div>
+                    </nav>
                 </div>
             </section>
 
             <section id="main-content-wrapper" class="main-content-wrapper">
-                <section id="header" class="header-section header-image">
+                <section id="header" class="header-section parallax header">
                     <div class="heading">
                         My name is John Cole.
                     </div>
@@ -62,7 +80,7 @@
                     </div>
                 </section>
 
-                <section id="coding-photo" class="image-break parallax bg2">
+                <section id="coding-photo" class="image-break parallax coding">
                     <!-- Image Credits -->
                     <div class="image-credits">
                         <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@furbee?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Oscar Nord">
@@ -103,7 +121,7 @@
                     </ul>
                 </section>
                 
-                <section id="piano-photo" class="image-break piano-image">
+                <section id="piano-photo" class="image-break parallax piano">
                     <!-- Image Credits -->
                     <div class="image-credits">
                         <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@dmjdenise?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Denise Jans">
@@ -123,9 +141,9 @@
                     <div class="cards">
                         <div class="card">
                             <h3>Unnamed project</h3>
-                            <p><em>Android application developer</em></p>
+                            <h4><em>Android application developer</em></h4>
                             <p>
-                                I am currently building an app for the Android environment.
+                                I am currently building an app for the Android environment using Kotlin.
                             </p>
                             <br/>
                             <p>
@@ -135,24 +153,19 @@
                         <div class="card" onclick="">
                             <img src="img/angulate-media.png"/>
                             <h3>Angulate Media</h3>
-                            <p><em>Freelance developer</em></p>
+                            <h4><em>Freelance developer</em></h4>
                             <p>
                                 Worked on a freelance basis for Angulate Media to help build an app for one of their clients.
                             </p>
                             <br/>
-                            <p>
-                                Read more...
-                            </p>
+                            <p>Visit their <a href="https://www.angulate.co.za">website</a></p>
                         </div>
                         <div class="card">
+                            <img src="img/quantum.png"/>
                             <h3>Quantum Sound</h3>
-                            <p><em>Creator and system architect</em></p>
+                            <h4><em>Creator and system architect</em></h4>
                             <p>
-                                Started a business and built all of the infrastructure, including an API, an app and a database.
-                            </p>
-                            <br/>
-                            <p>
-                                Read more...
+                                Started a business and built all of the infrastructure, including an API and a database.
                             </p>
                         </div>
                         <div class="card">
@@ -172,7 +185,7 @@
                       </div>       
                 </section>
 
-                <section id="skyscraper-photo" class="image-break skyscraper-image">
+                <section id="skyscraper-photo" class="image-break parallax skyscraper">
                     <!-- Image Credits -->
                     <div class="image-credits">
                         <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@vimarovi?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Victor Rodriguez">
@@ -205,14 +218,43 @@
                             <li>Football</li>
                             <li>History (especially classical history)</li>
                             <li>Linguistics and etymology</li>
-                            <li>Photography (some of these photos are my own!)</li>
+                            <li>Photography (the photo at the top is my own)</li>
                         </ul>
                     </div>
                 </section>
             </section>
         </main>
-        <script>
 
+        <script>
+            function myFunction(x) {
+                var navMenu = document.getElementById("collapsed-nav-bar");
+                if (x.matches) { // If media query matches
+                    navMenu.removeAttribute("hidden")
+                } else {
+                    navMenu.setAttribute("hidden", null)
+                }
+            }
+
+            var x = window.matchMedia("(max-width: 600px)")
+            myFunction(x) // Call listener function at run time
+            x.addListener(myFunction) // Attach listener function on state changes 
+
+            // Look for .hamburger
+            var hamburger = document.querySelector(".hamburger");
+            // On click
+            hamburger.addEventListener("click", function() {
+              // Toggle class "is-active"
+              hamburger.classList.toggle("is-active");
+              document.getElementById("collapsed-nav-options").classList.toggle("shown-nav-options");
+            });
+
+            var hamburger = document.querySelector(".collapsed-nav-options");
+            hamburger.addEventListener("click", function() {
+              // Toggle class "is-active"
+              hamburger.classList.toggle("is-active");
+              document.getElementById("collapsed-nav-options").classList.toggle("shown-nav-options");
+            });
         </script>
+          
     </body>
 </html>

@@ -9,32 +9,38 @@
 .card {
     background-color: $colour-accent;
     border-radius: 10px;
-    width: 200px;
-    height: 300px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    width: 300px;
+    height: 400px;
     margin: 20px;
 }
 
 .card img {
+    margin: 5px;
     padding: 5px;
-    width: 80%;
+    width: auto;
+    height: 25%;
 }
 
-.work-section {
-    /* Needed for children to be absolutely positioned relative to the parent. */
-    position: relative;
-    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-    height: 100%;
+.card p {
+    padding: 5px;
+    width: 200px;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
 
-    color: $colour-text-white;
-    text-shadow: 0 0 5px $colour-accent-dark;
+
+.card a {
+    text-decoration: underline !important;
+    color: $colour-primary-dark;
 }
 
 .cards :hover {
-    scale: 1.2;
+    scale: 1.01;
 }
 
-.card img, p, h3 {
+.card img, p, h3, h4 {
     pointer-events: none;
 }
