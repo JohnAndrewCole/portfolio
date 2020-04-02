@@ -78,6 +78,22 @@ ul {
   text-shadow: 0 0 5px #566E8B;
 }
 
+.interests-section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
+  z-index: 1;
+  /* For text formatting. */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: space-between;
+  color: #ffffff;
+  text-shadow: 0 0 5px #566E8B;
+}
+
 .nav-bar {
   position: fixed;
   z-index: 1;
@@ -94,6 +110,11 @@ ul {
   align-content: space-between;
 }
 
+.me-image {
+  width: 200px !important;
+  height: 200px !important;
+}
+
 .main-content-wrapper {
   margin-left: 300px;
 }
@@ -105,6 +126,11 @@ ul {
 
   .main-content-wrapper {
     margin-left: 150px;
+  }
+
+  .me-image {
+    width: 90px !important;
+    height: 90px !important;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -291,6 +317,9 @@ ul {
   width: 300px;
   height: 400px;
   margin: 20px;
+  overflow: hidden;
+  text-overflow: clip;
+  transition: width 0.5s ease-in-out;
 }
 
 .card img {
@@ -301,13 +330,14 @@ ul {
 }
 
 .card p {
-  padding: 5px;
-  width: 200px;
+  padding: 0px;
+  width: 250px;
   overflow: hidden;
   display: inline-block;
   text-decoration: none;
   text-overflow: ellipsis;
   white-space: normal;
+  font-size: 0.9em;
 }
 
 .card a {
@@ -321,6 +351,12 @@ ul {
 
 .card img, p, h3, h4 {
   pointer-events: none;
+  padding: 0px;
+}
+
+.bigger {
+  width: 400px;
+  height: 500px;
 }
 
 /*!

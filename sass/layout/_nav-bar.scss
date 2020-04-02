@@ -14,6 +14,11 @@
     align-content: space-between;
 }
 
+.me-image {
+    width: 200px !important;
+    height: 200px !important;
+}
+
 .main-content-wrapper {
     margin-left: 300px;
 }
@@ -25,6 +30,11 @@
 
     .main-content-wrapper {
         margin-left: 150px;
+    }
+
+    .me-image {
+        width: 90px !important;
+        height: 90px !important;
     }
 }
 

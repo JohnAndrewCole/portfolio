@@ -19,7 +19,8 @@
                     <div><a href="#interests">Interests</a></div>
                 </nav>
                 <div id="contact" class="contact">
-                    <p>Built simply and effectively with HTML and CSS.</p>
+                    <img class="me-image" src="img/me.png"/>
+                    <p>Built simply and effectively with HTML, CSS and just a touch of JS.</p>
                     <p>Copyright John Cole 2020.</p>
                     <a href="https://www.linkedin.com/in/john-andrew-cole/" target="_blank" rel="noopener noreferrer">
                         <img src="img/linkedin-icon.png" class="link-icons">
@@ -78,7 +79,6 @@
                         <span>I hold both Irish and South African citizenship.</span>
                         <span>I am looking for work in Europe.</span>
                         <span>I have a diverse range of experiences and technologies under my belt.</span>
-                        <span>I am self-taught.</span>
                     </div>
                 </section>
 
@@ -141,50 +141,56 @@
                 <section id="work" class="work-section static inner-content">
                     <h2>My work:</h2>
                     <div class="cards">
-                        <div class="card">
-                            <h3>Unnamed project</h3>
+                        <div id="unnamed-project" class="card">
+                            <img src="img/logo.png"/>
+                            <h3>Unnamed personal project</h3>
                             <h4><em>Android application developer</em></h4>
                             <p>
-                                I am currently building an app for the Android environment using Kotlin.
-                            </p>
-                            <br/>
-                            <p>
-                                Check back soon for updates.
+                                I am currently building an app for the Android environment using Kotlin. It is a music theory training application.
                             </p>
                         </div>
-                        <div class="card" onclick="">
+                        <div id="angulate-media" class="card">
                             <img src="img/angulate-media.png"/>
                             <h3>Angulate Media</h3>
                             <h4><em>Freelance developer</em></h4>
                             <p>
                                 Worked on a freelance basis for Angulate Media to help build an app for one of their clients.
-                            </p>
                             <br/>
-                            <p>Visit their <a href="https://www.angulate.co.za">website</a></p>
+                            <br/>
+                                Due to an NDA, I cannot show any part of the app or share the name of the app. However, I can provide testimonials and references on request.
+                            </p>
                         </div>
-                        <div class="card">
+                        <div id="quantum-sound" class="card">
                             <img src="img/quantum.png"/>
                             <h3>Quantum Sound</h3>
                             <h4><em>Creator and system architect</em></h4>
                             <p>
-                                Started a business and built all of the infrastructure, including an API and a database.
+                                Started a business and built all of the infrastructure, including an API (using ASP.NET) and a relational database (MS SQL).
+                            <br/>
+                            <br/>
+                                I have a private repository for the API and the databases stored on a private server, all available to view by request.
                             </p>
                         </div>
-                        <div class="card">
+                        <div id="equipment-rental" class="card">
+                            <img src="img/audio-equipment.png"/>
                             <h3>Audio Equipment Rental</h3>
-                            <p><em>Manager and system architect</em></p>
+                            <h4><em>Manager and system architect</em></h4>
                             <p>
-                                Ran a rental business through a website. Built the database and website, and modelled the interactions between the two.
+                                Ran a rental business through a website that I built. I also built the database that the website relied on.
+                            <br/>
+                            <br/>
+                                I am currently attempting to re-create this website after I made a rash decision and closed the website down without having a local copy of the code.
                             </p>
                         </div>
-                        <div class="card">
+                        <div id="oligon" class="card">
+                            <img src="img/oligon.png"/>
                             <h3>Oligon</h3>
-                            <p><em>Music producer</em></p>
+                            <h4><em>Music producer</em></h4>
                             <p>
                                 Taught myself to write, arrange, mix and master electronic music, and released music onto all major streaming platforms.
                             </p>
                         </div>
-                      </div>       
+                    </div>
                 </section>
 
                 <section id="skyscraper-photo" class="image-break parallax skyscraper">
@@ -202,7 +208,7 @@
                     </div>
                 </section>
 
-                <section id="interests" class="text-section static inner-content">
+                <section id="interests" class="interests-section static inner-content">
                     <div>
                         <h2>These are the things that I currently find the most exciting.</h2>
                         <span>Technologies</span>
@@ -240,9 +246,12 @@
             var x = window.matchMedia("(max-width: 600px)")
             myFunction(x) // Call listener function at run time
             x.addListener(myFunction) // Attach listener function on state changes 
+        </script>
 
+        <script>
             // Look for .hamburger
             var hamburger = document.querySelector(".hamburger");
+
             // On click
             hamburger.addEventListener("click", function() {
               // Toggle class "is-active"
@@ -258,5 +267,51 @@
             });
         </script>
           
+        <script>
+            // Look for work cards
+            var card0 = document.querySelector("#unnamed-project");
+
+            // On click
+            card0.addEventListener("click", function() {
+                // Toggle class "is-active"
+                card0.classList.toggle("bigger");
+            });
+
+            // Look for work cards
+            var card1 = document.querySelector("#angulate-media");
+
+            // On click
+            card1.addEventListener("click", function() {
+                // Toggle class "is-active"
+                card1.classList.toggle("bigger");
+            });
+
+            // Look for work cards
+            var card2 = document.querySelector("#quantum-sound");
+
+            // On click
+            card2.addEventListener("click", function() {
+                // Toggle class "is-active"
+                card2.classList.toggle("bigger");
+            });
+
+            // Look for work cards
+            var card3 = document.querySelector("#equipment-rental");
+
+            // On click
+            card3.addEventListener("click", function() {
+                // Toggle class "is-active"
+                card3.classList.toggle("bigger");
+            });
+
+            // Look for work cards
+            var card4 = document.querySelector("#oligon");
+
+            // On click
+            card4.addEventListener("click", function() {
+                // Toggle class "is-active"
+                card4.classList.toggle("bigger");
+            });
+        </script>
     </body>
 </html>

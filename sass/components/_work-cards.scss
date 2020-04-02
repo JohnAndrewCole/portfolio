@@ -12,6 +12,9 @@
     width: 300px;
     height: 400px;
     margin: 20px;
+    overflow: hidden;
+    text-overflow: clip;
+    transition: width 0.5s ease-in-out;
 }
 
 .card img {
@@ -22,13 +25,14 @@
 }
 
 .card p {
-    padding: 5px;
-    width: 200px;
+    padding: 0px;
+    width: 250px;
     overflow: hidden;
     display: inline-block;
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: normal;
+    font-size: 0.9em;
 }
 
 
@@ -43,4 +47,10 @@
 
 .card img, p, h3, h4 {
     pointer-events: none;
+    padding: 0px;
+}
+
+.bigger {
+    width: 400px;
+    height: 500px;
 }
