@@ -11,6 +11,11 @@ a {
   color: inherit;
 }
 
+ul {
+  padding: 2em;
+  list-style-position: initial;
+}
+
 .main-content-wrapper {
   /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
   overflow-x: hidden;
@@ -39,7 +44,7 @@ a {
   /* Needed for children to be absolutely positioned relative to the parent. */
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: 100vh;
+  height: 100%;
   z-index: 1;
   /* For text formatting. */
   display: flex;
